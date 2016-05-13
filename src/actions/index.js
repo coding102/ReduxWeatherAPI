@@ -12,7 +12,7 @@ export function fetchWeather(city) {
      // http://openweathermap.org/forecast5
      const url = `${ROOT_URL}&q=${city}, us`;
      const request = axios.get(url);
-     
+          
      return {
           type: 'FETCH_WEATHER',
           payload: request
